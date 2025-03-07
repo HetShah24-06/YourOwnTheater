@@ -34,10 +34,10 @@ function logout(sessionId) {
           const currentUrl = document.URL;
 
           if (currentUrl.includes("WebPages")) {
-              window.location.replace("../login.html");
+              window.location.replace("../index.html");
           }
           else{
-                window.location.replace("login.html");
+                window.location.replace("index.html");
           }
         } else {
           console.error("Logout failed:", data.status_message);
@@ -54,10 +54,10 @@ window.addEventListener('pageshow', function(event) {
             const currentUrl = document.URL;
 
             if (currentUrl.includes("WebPages")) {
-                window.location.replace("../login.html");
+                window.location.replace("../index.html");
             }
             else{
-                  window.location.replace("login.html");
+                  window.location.replace("index.html");
             }
         }
       }

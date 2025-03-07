@@ -70,7 +70,7 @@ async function fetchData(user, pwd) {
         }
 
         if(sessionId != ""){
-            window.location.href = `index.html`;
+            window.location.href = `home.html`;
         }else{
             throw new Error("Something went wrong!");
         }
