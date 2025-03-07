@@ -1,0 +1,622 @@
+/* font imports */
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Kalam:wght@300;400;700&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Signika+Negative:wght@300..700&display=swap');
+
+/* Variable For Common Use  */
+:root {
+    --THEME_BACKGROUND: lightyellow;
+    --NAV_FOOTER_BACKGROUND: rgb(0, 0, 0, 0.85);
+    --WHITE: white;
+    --HEADER_H1: rgb(187, 160, 101);
+    --HEADER_H1_LIGHT: rgb(231, 203, 145);
+    --TEXT_BROWN: rgb(55, 34, 19);
+    --TEXT_BLACK: rgb(0, 0, 0);
+    --BORDER_BROWN: rgb(55, 34, 19);
+    --BUTTON: rgb(30, 25, 21);
+    --BUTTON_HOVER: rgb(30, 25, 21, 0.9);
+    --BUTTON_TEXT: rgb(248, 255, 255);
+    --ANCHOR_HOVER: rgb(116, 65, 18);
+}
+
+/* Variable End */
+
+/* Font Style Start */
+
+#header {
+    font-family: "Kalam", cursive;
+}
+
+#nav_bar,
+#footer {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+}
+
+#footer_div {
+    font-family: "Dancing Script", sans-serif;
+}
+
+.title {
+    font-family: "Signika Negative", sans-serif;
+    font-weight: 600;
+    font-size: 3em;
+}
+
+.sub-title {
+    font-family: "Signika Negative", sans-serif;
+    font-weight: 600;
+    font-size: 2em;
+}
+
+.sub-title-movie-list {
+    font-family: "Signika Negative", sans-serif;
+    font-weight: 600;
+    font-size: 1.3em;
+}
+
+.dates{
+    font-family: "Signika Negative", sans-serif;
+    font-weight: 600;
+    font-size: 1.5em;
+    margin: 0;
+}
+
+.sub-title-tag-line {
+    font-family: "Signika Negative", sans-serif;
+    font-weight: 600;
+    font-size: 1.4em;
+    font-style: italic;
+}
+
+.sub-title-small {
+    font-family: "Signika Negative", sans-serif;
+    font-weight: 600;
+    font-size: 0.9em;
+}
+
+.rate-movie {
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+    font-size: 1.3em;
+    font-weight: bold;
+}
+
+/* Font Style End */
+
+/* Common Class Start */
+
+.title {
+    width: 100%;
+    margin: 15px 0;
+    text-align: center;
+}
+
+.sub-title {
+    width: 100%;
+    margin: 15px 0;
+    text-align: center;
+}
+
+.sub-title-tag-line {
+    width: 100%;
+    margin: 15px 0;
+    text-align: center;
+}
+
+.sub-title-small {
+    width: 100%;
+    text-align: center;
+}
+
+.more{
+    text-align: right;
+    display: block;
+    cursor: pointer;
+}
+
+.vote_avg {
+    display: inline-block;
+}
+
+.vote_avg_container {
+    text-align: center;
+}
+
+.dates{
+    display: block;
+    text-align: center;
+}
+
+.center-video{
+    text-align: center;
+}
+
+.video-box{
+    width:920px;
+    height:550px;
+}
+/* Common Class End  */
+
+/* Style Reset And Common Style*/
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* font-family: Arial, Helvetica, sans-serif; */
+    font-size: 16px;
+    background-color: var(--THEME_BACKGROUND);
+}
+
+a {
+    text-decoration: none;
+    font-size: 1.2em
+}
+
+ul {
+    padding: 0;
+}
+
+.movieimg {
+    border-radius: 0 10px 10px 0;
+    cursor: pointer;
+}
+
+#outer_div {
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+}
+
+/* login book style start */
+
+#login-main {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 3%;
+    margin-top: 10%;
+    justify-items: center;
+}
+
+#login-main p,
+#login-main label,
+#login-main legend,
+#login-main input,
+#login-main textarea,
+#login-main select {
+    font-size: 1.3em;
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+}
+
+#login-form-box {
+    width: 60%;
+}
+
+#login-list-box {
+    width: 100%;
+}
+
+#login-list-box-h1 {
+    width: 100%;
+    text-align: center;
+    margin-top: 5%;
+}
+
+fieldset {
+    border: 2px solid var(--BORDER_BROWN);
+    border-radius: 20px;
+    padding: 3% 8% 3% 3%;
+}
+
+#loginForm input {
+    margin-top: 3%;
+    width: 100%;
+    padding: 1%;
+    border: 1px solid var(--BORDER_BROWN);
+    border-radius: 20px;
+    background-color: var(--THEME_BACKGROUND);
+}
+
+#loginForm textarea {
+    max-width: 100%;
+    margin-top: 3%;
+    width: 100%;
+    padding: 2%;
+    border: 1px solid var(--BORDER_BROWN);
+    border-radius: 20px;
+    background-color: var(--THEME_BACKGROUND);
+}
+
+#loginForm select {
+    margin-top: 3%;
+    width: 105%;
+    padding: 1%;
+    border: 1px solid var(--BORDER_BROWN);
+    border-radius: 20px;
+    background-color: var(--THEME_BACKGROUND);
+}
+
+#loginForm button {
+    width: 105%;
+    margin-top: 3%;
+    padding: 1%;
+    border: 2px solid var(--BORDER_BROWN);
+    border-radius: 20px;
+    margin-top: 2%;
+    font-size: 1.5em;
+    background-color: var(--BUTTON);
+    color: var(--BUTTON_TEXT);
+}
+
+#loginForm button:hover {
+    cursor: pointer;
+    background-color: var(--BUTTON_HOVER);
+}
+
+/* login book style end */
+
+/* nav style */
+#nav_bar {
+    background-color: var(--NAV_FOOTER_BACKGROUND);
+    text-align: center;
+    width: 100%;
+}
+
+#nav_ul li {
+    display: inline;
+    margin: 0px 25px;
+    font-size: 1.3em;
+}
+
+#nav_ul li a {
+    /* text-decoration: underline var(--WHITE); */
+    color: var(--WHITE);
+}
+
+#nav_ul li a:hover {
+    color: var(--HEADER_H1_LIGHT);
+    text-decoration: underline var(--HEADER_H1_LIGHT);
+}
+
+/* header style */
+
+
+
+#header {
+    width: 100%;
+    line-height: 800%; 
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.9) 67%, rgba(0, 0, 0, 0.85) 100%),
+        url("../Media/28695758.jpg") no-repeat;
+    background-size: cover; 
+    background-position: center; 
+    text-align: center;
+}
+
+
+#header h1 {
+    font-size: 3.2em;
+}
+
+#header h1 a {
+    font-weight: bold;
+    font-size: 1.5em;
+    color: var(--HEADER_H1);
+}
+
+#header h1 a:hover {
+    text-shadow: 1px 1px 3px var(--WHITE);
+}
+
+/* footer style */
+
+#footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: var(--NAV_FOOTER_BACKGROUND);
+    width: 100%;
+    text-align: center;
+    line-height: 200%;
+}
+
+#footer_nav_ul {
+    list-style-type: none;
+}
+
+#footer_nav_ul li {
+    margin: 0px 25px;
+}
+
+#footer_nav_ul li a {
+    text-decoration: none;
+    color: var(--WHITE);
+}
+
+#footer_nav_ul li a:hover {
+    color: var(--HEADER_H1_LIGHT);
+    text-decoration: underline var(--HEADER_H1_LIGHT);
+}
+
+#footer_div {
+    color: var(--WHITE);
+    font-weight: bolder;
+    font-size: 1.5em;
+}
+
+/* footer style end */
+
+
+/* Movie shelf style start */
+
+#movie-main {
+    padding: 2%;
+}
+
+.movie-box h1 {
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 100%;
+    text-align: center;
+}
+
+.show-case {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    justify-items: center;
+    padding: 1%;
+}
+
+.shelf {
+    border-bottom: 10px solid transparent;
+    border-image: linear-gradient(to right, rgb(27, 18, 17), rgb(97, 47, 42));
+    border-image-slice: 1;
+    padding: 0 5% 0 5%;
+    text-align: center;
+    width: 70%;
+}
+
+.shelf img {
+    height: 225px;
+    width: 150px;
+}
+
+/* Movie shelf style end */
+
+
+
+/* Movie list style start */
+
+#movielist-main {
+    padding: 2%;
+}
+
+#movielist-main p {
+    font-size: 1.2em;
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+}
+
+#movie-list-block {
+    margin-top: 5%;
+}
+
+#movielist-main h1 {
+    width: 100%;
+    text-align: center;
+}
+
+.movie-list-detail {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+}
+
+.movie {
+    margin-top: 7%;
+    font-weight: 550;
+}
+
+.movie img{
+    height: 225px;
+    width: 150px;
+}
+
+#movie_name_search input{
+    text-align: center;
+}
+
+#movie_name_search_container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+}
+
+#movie_name_search {
+    display: block;
+    text-align: center;
+    padding: 1%;
+    border: 1px solid var(--BORDER_BROWN);
+    border-radius: 20px;
+    background-color: var(--THEME_BACKGROUND);
+}
+/* Movie list style end */
+
+
+/* movie detail style start */
+
+#movie-detail-main {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    margin: 3%;
+}
+
+#movie-detail-main p {
+    font-size: 1.2em;
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+}
+
+#movie-detail-title, #movie-detail-recommand{
+    color: var(--TEXT_BROWN);
+}
+
+#movie-detail-main-left {
+    position: sticky;
+    top: 150px;
+    align-self: start;
+    display: grid;
+    grid-template-columns: 1fr;
+    /* grid-template-rows: 1fr 1fr; */
+    grid-template-rows: 1fr 50px 1fr;
+    width: 50%;
+    justify-items: center;
+
+}
+
+#movie-detail-main-left a {
+    color: var(--TEXT_BROWN);
+    text-decoration: underline;
+    margin-left: 3%;
+    margin-top: 3%;
+    height: 20px;
+    text-align: center;
+}
+
+.subdetail_link{
+    color: var(--TEXT_BLACK);
+    font-size: 1em;
+    font-weight: 500;
+}
+
+.subdetail{
+    color: var(--TEXT_BROWN);
+    font-weight: 600;
+}
+
+.miscellaneous{
+    color: var(--TEXT_BROWN);
+    font-weight: 600;
+}
+
+.miscellaneous-list{
+    font-weight: 500;
+    text-decoration: 2px underline green;
+}
+
+.recommand-related-detail {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+}
+
+.recommand{
+    padding: 0 5%;
+}
+
+.related {
+    font-weight: 550;
+}
+
+#movie_rate_container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+}
+
+#movie_rate_input {
+    display: block;
+    text-align: center;
+    padding: 5%;
+    border: 1px solid var(--BORDER_BROWN);
+    border-radius: 20px;
+    background-color: var(--THEME_BACKGROUND);
+    width: 30%;
+}
+
+#add_button_container{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+#add_watchlist, #add_favourite, #remove_watchlist, #remove_favourite{
+    margin: 0 5%;
+    padding: 0.5% 1%;
+    border: 2px solid var(--BORDER_BROWN);
+    border-radius: 20px;
+    font-size: 0.5m;
+    background-color: var(--BUTTON);
+    color: var(--BUTTON_TEXT);
+}
+
+#add_watchlist:hover, #add_favourite:hover, #remove_watchlist:hover, #remove_favourite:hover {
+    cursor: pointer;
+    background-color: var(--BUTTON_HOVER);
+}
+
+/* movie detail style end */
+
+@media all and (max-width: 768px) {
+
+    /* nav style */
+
+    #nav_ul li {
+        display: block;
+        margin: 25px 0;
+    }
+
+    /* header style */
+
+    #header {
+        line-height: 800%;
+    }
+
+    #header h1 a {
+        font-size: 1em;
+    }
+
+    .video-box{
+        width:460px;
+        height:225px;
+    }
+
+    /* Movie shelf style start */
+
+    .show-case {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .show-case img {
+        padding-top: 10%;
+    }
+
+    /* Movie shelf style end */
+
+    /* Movie list style start */
+    .movie-list-detail {
+        width: 100%;
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    #movielist-main p {
+        text-align: justify;
+    }
+
+    /* Movie list style end */
+
+    /* movie detail style start */
+    #movie-detail-main {
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-items: center;
+    }
+
+    #movie-detail-main-left {
+        position: relative;
+        top: 0px;
+        display: grid;
+        justify-content: center;
+        height: 350px;
+        width: 175px;
+    }
+
+    #movie-detail-main-left a {
+        width: 100%;
+    }
+
+    /* movie detail style end */
+}
