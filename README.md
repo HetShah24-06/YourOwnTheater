@@ -32,7 +32,9 @@ This project was a collaborative capstone project developed by:
 1. Create an account on [TMDB](https://www.themoviedb.org/signup).
 2. Log in to YOT using your TMDB credentials.
 3. Start managing your movies with watch lists, favorites, and ratings.
-
+## Demo Login Credentials: 
+login id - HetShah24-06
+password - Demo@007
 ---
 
 Enjoy your personalized movie theater experience with YOT!
