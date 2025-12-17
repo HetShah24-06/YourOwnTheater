@@ -23,10 +23,10 @@ Your Own Theater (YOT) is a web-based application that allows users to manage th
 
 ## Team
 This project was a collaborative capstone project developed by:
-- Vinamra Bhvsar
-- Hetvi Shah
-- Het Shah
-- Dhruv Modi
+- Het Shah (Team Lead) (Full stack)
+- Vinamra Bhvsar (team member- backend)
+- Hetvi Shah (UI & UX design)
+- Dhruv Modi (Frontend)
 
 ## Usage
 1. Create an account on [TMDB](https://www.themoviedb.org/signup).
